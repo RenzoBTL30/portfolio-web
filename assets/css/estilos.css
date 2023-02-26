@@ -77,6 +77,25 @@ img {
 }
 
 /*===== CLASS CSS ===== */
+
+.screen-load-send-contact {
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.screen-load-send-contact.display {
+  visibility: visible;
+}
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -468,6 +487,30 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   padding-top: 10px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border-left-color: rgb(5, 124, 203);
+  opacity: 1;
+  animation: spin 1s ease infinite;
+}
+
+.like-color {
+  color: rgb(247, 186, 4);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===== MEDIA QUERIES=====*/

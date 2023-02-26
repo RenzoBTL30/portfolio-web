@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <div id="screen-load-send-contact" class="screen-load-send-contact">
+        <div class="spinner"></div>
+    </div>
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -269,13 +272,15 @@
             <h2 class="section-title">Contacto</h2>
 
             <div class="contact__container bd-grid">
-                <form action="enviar.php" class="contact__form" method="post">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="contact__input">
-                    <input type="email" id="correo" name="correo" placeholder="Email" class="contact__input">
-                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="contact__input">
-                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" cols="0" rows="10" class="contact__input"></textarea>
+                <form id="formulario" action="https://formspree.io/f/xzbqrnob" class="contact__form" method="POST">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="contact__input" required>
+                    <input type="email" id="correo" name="correo" placeholder="Email" class="contact__input" required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="contact__input" required>
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" cols="0" rows="10" class="contact__input" required></textarea>
                     
-                    <button id="btnEnviar" type="submit" class="contact__button button">Enviar</button>
+                    <button id="btnEnviar" type="submit" class="contact__button button">
+                        Enviar
+                    </button>
                 </form>
             </div>
         </section>
@@ -298,8 +303,8 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/form-contacto.js"></script>
-
+    <script src="assets/js/enviar-correo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
