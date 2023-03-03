@@ -21,7 +21,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Portfolio</a>
+                <a href="#home" class="nav__logo">Portfolio</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -113,6 +113,16 @@
                         <div class="skills__level">
                             <span class="skills__level-description">Intermedio</span>
                             <progress class="skills__level-bar" max="100" value="60">100%</progress>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-jquery skills__icon' ></i>
+                            <span class="skills__name">Jquery</span>
+                        </div>
+                        <div class="skills__level">
+                            <span class="skills__level-description">Básico</span>
+                            <progress class="skills__level-bar" max="100" value="30">100%</progress>
                         </div>
                     </div>
                     <div class="skills__data">
@@ -218,49 +228,108 @@
             <h2 class="section-title">Proyectos</h2>
 
             <div class="work__container bd-grid">
+
                 <div class="work__project">
                     <div class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                        <img src="assets/img/gestion-practicas-screen.png" alt="">
+                    </div>
+                    <div class="work__project-info">
+                        <h2 class="work__project-title">Sistema de Gestión de Prácticas Pre Profesionales</h2>
+                        <p class="work__project-description">Forme parte del equipo que desarrolló este proyecto para la Escuela de Nutrición Humana de la Universidad Peruana Unión - Lima, Perú. La problemática existente fue la falta de monitoreo de las horas prácticas de los estudiantes y el consumo de tiempo en los trámites para el proceso de prácticas. Este sistema se encarga de gestionar y monitorear dicho proceso. Los usuarios que interactuan con este sistema son el estudiante, la secretaria, el director de escuela y el supervisor de prácticas.</p>
+                        <h2 class="work__project-subtitle">Tecnologías utilizadas:</h2>
+                        <ul class="work__project-tecnologias">
+                            <li>Node JS</li>
+                            <li>Angular</li>
+                            <li>Bootstrap</li>
+                            <li>Angular material</li>
+                            <li>Sass</li>
+                            <li>MySQL</li>
+                            <li>Json Web Token</li>
+                            <li>Firebase</li>
+                        </ul>
+                        <div class="work__project-buttons">
+                            <a href="#" class="work__project-button"><i
+                                    class='bx bxs-show work__project-icon'></i>Visualizar</a>
+                            <label for="btn-modal-practicas" class="lbl-modal"><a class="work__project-button" style="cursor: pointer;"><i
+                                class='bx bxs-folder work__project-icon'></i>Repositorios</a></label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__project">
+                    <div class="work__img">
+                        <img src="assets/img/encriptador-screen.png" alt="">
                     </div>
                     <div class="work__project-info">
                         <h2 class="work__project-title">Encriptador de texto</h2>
-                        <p class="work__project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Porro natus necessitatibus odit molestiae, iure magnam debitis quibusdam magni suscipit
-                            ipsum dolorem saepe numquam, tenetur blanditiis maxime? Sunt, quam. Molestiae, error.</p>
+                        <p class="work__project-description">Este proyecto consiste en encriptar texto normal insertando caracteres en el mismo. 
+                            Además, también puede desencriptar el texto encriptado. 
+                        </p>
                         <h2 class="work__project-subtitle">Tecnologías utilizadas:</h2>
                         <ul class="work__project-tecnologias">
                             <li>HTML5</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
+                            <li>Jquery</li>
                         </ul>
                         <div class="work__project-buttons">
-                            <a href="#" class="work__project-button"><i
+                            <a href="https://renzobtl30.github.io/app-encriptador/" target="_blank" class="work__project-button"><i
                                     class='bx bxs-show work__project-icon'></i>Visualizar</a>
-                            <a href="#" class="work__project-button"><i
-                                    class='bx bxl-github work__project-icon'></i>Github</a>
+                            <a href="https://github.com/RenzoBTL30/app-encriptador" target="_blank" class="work__project-button"><i
+                                    class='bx bxl-github work__project-icon'></i>Repositorio</a>
                         </div>
                     </div>
                 </div>
                 <div class="work__project">
                     <div class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                        <img src="assets/img/juego-ahorcado-screen.png" alt="">
                     </div>
                     <div class="work__project-info">
-                        <h2 class="work__project-title">Encriptador de texto</h2>
-                        <p class="work__project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Porro natus necessitatibus odit molestiae, iure magnam debitis quibusdam magni suscipit
-                            ipsum dolorem saepe numquam, tenetur blanditiis maxime? Sunt, quam. Molestiae, error.</p>
+                        <h2 class="work__project-title">Juego del ahorcado</h2>
+                        <p class="work__project-description">Este juego consiste en adivinar palabras con cada letra que presiona el usuario. Asimismo, el usuario tiene la opción de agregar palabras con sus categorías propias</p>
                         <h2 class="work__project-subtitle">Tecnologías utilizadas:</h2>
                         <ul class="work__project-tecnologias">
                             <li>HTML5</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
+                            <li>Jquery</li>
+                            <li>SweetAlert2</li>
                         </ul>
                         <div class="work__project-buttons">
-                            <a href="#" class="work__project-button"><i
+                            <a href="https://renzobtl30.github.io/app-juego-del-ahorcado/" target="_blank" class="work__project-button"><i
                                     class='bx bxs-show work__project-icon'></i>Visualizar</a>
-                            <a href="#" class="work__project-button"><i
-                                    class='bx bxl-github work__project-icon'></i>Github</a>
+                            <a href="https://github.com/RenzoBTL30/app-juego-del-ahorcado" target="_blank" class="work__project-button"><i
+                                    class='bx bxl-github work__project-icon'></i>Repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="work__project">
+                    <div class="work__img">
+                        <img src="assets/img/gestion-capacitaciones-screen.png" alt="">
+                    </div>
+                    <div class="work__project-info">
+                        <h2 class="work__project-title">Sistema de Gestión de Capacitaciones</h2>
+                        <p class="work__project-description">Este proyecto consiste en una plataforma online que permite planificar, controlar y monitorear capacitaciones para los usuarios que lo requieran, similar a un aula virtual.
+                            Actualmente está en mantenimiento...</p>
+                        <h2 class="work__project-subtitle">Tecnologías utilizadas:</h2>
+                        <ul class="work__project-tecnologias">
+                            <li>Spring</li>
+                            <li>Java</li>
+                            <li>Hibernate</li>
+                            <li>JPA</li>
+                            <li>Angular</li>
+                            <li>Bootstrap</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <div class="work__project-buttons">
+                            <a class="work__project-button disabled"><i
+                                class='bx bxs-show work__project-icon'></i>Visualizar</a>
+                            <label for="btn-modal-capacitaciones" class="lbl-modal"><a class="work__project-button" style="cursor: pointer;"><i
+                                class='bx bxs-folder work__project-icon'></i>Repositorios</a></label>
                         </div>
                     </div>
                 </div>
@@ -296,6 +365,44 @@
                     class='bx bxl-github'></i></a>
         </div>
     </footer>
+
+    <!--===== MODALS =====-->
+    <!--Modal Proyecto Practicas-->
+    <input type="checkbox" id="btn-modal-practicas">
+    <div class="container-modal-practicas">
+        <div class="content-modal">
+            <div class="content-modal-repositorys">
+                <a href="https://github.com/RenzoBTL30/app-practicas.git" class="work__project-button btn-repository-front"><i
+                    class='bx bxl-github work__project-icon'></i>Repositorio Front-end</a>
+                <a href="https://github.com/Alvaro3131/backend_nodeintegrador.git" class="work__project-button btn-repository-back"><i
+                    class='bx bxl-github work__project-icon'></i>Repositorio Back-end</a>
+            </div>
+            
+            <div class="btn-cerrar">
+                <label for="btn-modal-practicas">Cerrar</label>
+            </div>
+        </div>
+        <label for="btn-modal-practicas" class="cerrar-modal"></label>
+    </div>
+
+
+    <!--Modal Proyecto Capacitaciones-->
+    <input type="checkbox" id="btn-modal-capacitaciones">
+    <div class="container-modal-capacitaciones">
+        <div class="content-modal">
+            <div class="content-modal-repositorys">
+                <a href="https://github.com/RenzoBTL30/Proyecto-Adra-Frontend.git" class="work__project-button btn-repository-front"><i
+                    class='bx bxl-github work__project-icon'></i>Repositorio Front-end</a>
+                <a href="https://github.com/RenzoBTL30/Proyecto-Adra-Backend.git" class="work__project-button btn-repository-back"><i
+                    class='bx bxl-github work__project-icon'></i>Repositorio Back-end</a>
+            </div>
+            
+            <div class="btn-cerrar">
+                <label for="btn-modal-capacitaciones">Cerrar</label>
+            </div>
+        </div>
+        <label for="btn-modal-capacitaciones" class="cerrar-modal"></label>
+    </div>
 
 
     <!--===== SCROLL REVEAL =====-->
